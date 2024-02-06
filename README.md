@@ -2,4 +2,4 @@
 
 ## clonging guide
 
-- install json server [here]{https://www.npmjs.com/package/json-server}
+- install json server [here][https://www.npmjs.com/package/json-server]
