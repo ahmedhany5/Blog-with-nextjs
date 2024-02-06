@@ -1,6 +1,7 @@
 # Frist project with next js
 
 - Next js
+- Typescript
 
 ## cloning guide
 
