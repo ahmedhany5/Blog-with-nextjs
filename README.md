@@ -1,4 +1,4 @@
-# Fist project with next js
+# Frist project with next js
 
 - Next js
 
