@@ -1,4 +1,4 @@
-# Frist project with next js
+# First project with next js
 
 - Next js
 - Typescript
