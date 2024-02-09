@@ -2,7 +2,7 @@ import { unstable_cache } from "next/cache"
 import prisma from "./db"
 import { cache } from "react"
 
-export const getUsers = unstable_cache(cache(()=> {
+export const getUsers = unstable_cache(cache(async ()=> {
     return prisma.user.findMany()
 }), ["users"])
 
