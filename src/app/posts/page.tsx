@@ -24,7 +24,9 @@ export default function PostList({
 }
 
 async function PostGrid({ userId, query }: { userId: string; query: string }) {
-  const posts = await getPosts();
+  const posts = await getPosts({ userId, query });
+
+  if (posts === null) return notFound()
 
   return posts.map((post) => <PostCard key={post.id} {...post} />);
 }
