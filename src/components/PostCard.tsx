@@ -4,7 +4,7 @@
 import { Skeleton, SkeletonButton } from "@/components/Skeleton"
 import Link from "next/link"
 
-export function PostCard({ id, title, body }: { id: string, title: string, body: string }) {
+export function PostCard({ id, title, body, userId }: { id: number, title: string, body: string, userId?: number , key?: number}) {
     return (
         <div className="card">
             <div className="card-header">{title}</div>

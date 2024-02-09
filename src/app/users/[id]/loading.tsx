@@ -1,11 +1,14 @@
-import { SkeletonPostCard } from '@/components/PostCard'
-import { SkeletonList } from '@/components/Skeleton'
-import React from 'react'
+import { Skeleton, SkeletonList } from "@/components/Skeleton";
 
-export default function loading() {
+export default function Loading() {
     return (
-        <SkeletonList amount={5}>
-            <SkeletonPostCard />
-        </SkeletonList>
+        <div>
+            < div className="card" >
+                <div className="card-body">
+                    <Skeleton />
+                    <Skeleton />
+                </div>
+            </div >
+        </div >
     )
 }
