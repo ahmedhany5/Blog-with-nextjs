@@ -3,7 +3,7 @@ import prisma from "./db"
 import { cache } from "react"
 
 export const getTodos = unstable_cache(cache(async ()=> {
-  await wait(2000)
+
 
   return prisma.todo.findMany()
 }), ["todos"])

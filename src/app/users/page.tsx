@@ -5,6 +5,7 @@ import { SkeletonList } from "@/components/Skeleton";
 import { SkeletonPostCard } from "@/components/PostCard";
 
 export default function Page() {
+    ;
     return (
         <>
             <h1 className="page-title">Users</h1>
@@ -56,7 +57,7 @@ function UserDetails(user: {
                     <div>{user.email}</div>
                 </div>
                 <div className="card-footer">
-                    <Link className="btn" href={`/users/}`}>
+                    <Link className="btn" href={`/users/${user.id}`}>
                         View
                     </Link>
                 </div>

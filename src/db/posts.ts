@@ -12,7 +12,7 @@ export const getPosts = unstable_cache(
       query?: string
       userId?: string | number
     } = {}) => {
-      await wait(2000)
+      
 
       const where: Prisma.PostFindManyArgs["where"] = {}
       if (query) {

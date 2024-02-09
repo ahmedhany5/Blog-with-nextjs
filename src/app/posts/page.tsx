@@ -9,7 +9,7 @@ type propsType = {
 };
 
 
-export default async function PostList({
+export default function PostList({
   searchParams: { userId = "", query = "" },
 }: propsType) {
   return (
@@ -29,7 +29,7 @@ async function PostGrid({ userId, query }: { userId: string; query: string }) {
   return posts.map((post) => <PostCard key={post.id} {...post} />);
 }
 
-export async function UserSelect() {
+async function UserSelect() {
   const users = await getUsers();
 
   return (
